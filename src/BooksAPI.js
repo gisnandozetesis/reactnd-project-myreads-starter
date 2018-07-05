@@ -12,9 +12,10 @@ const headers = {
   'Authorization': token
 }
 
-export const CURRENTLY_READING = 'currentlyReading';
-export const WANT_TO_READ = 'wantToRead';
-export const READ = 'read';
+export const SHELF_CURRENTLY_READING = 'currentlyReading';
+export const SHELF_WANT_TO_READ = 'wantToRead';
+export const SHELF_READ = 'read';
+export const SHELF_NONE = 'none';
 
 export const get = (bookId) =>
   fetch(`${api}/books/${bookId}`, { headers })

@@ -12,7 +12,7 @@ class BookShelf extends Component {
                   {
                       this.props.books.map((b) => (
                           <li key={b.id}>
-                              <BookItem book={b} />
+                              <BookItem book={b} onUpdateBookShelf={this.props.onUpdateBookShelf} />
                           </li>
                       ))
                   }
